@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <group
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_explore"
+            android:icon="@drawable/ic_home"
+            android:title="Home"
+            android:checked="true"/>
+        <item
+            android:id="@+id/nav_receitas"
+            android:icon="@drawable/ic_muffin"
+            android:title="Adicionar receita" />
+        <item
+            android:id="@+id/nav_favorites"
+            android:icon="@drawable/ic_nav_favorites"
+            android:title="Favoritos"
+            app:actionLayout="@layout/menu_counter"/>
+        <item
+            android:id="@+id/nav_editar"
+            android:icon="@drawable/ic_people"
+            android:title="Editar perfil" />
+        <item
+            android:id="@+id/nav_setting"
+            android:icon="@drawable/ic_sair"
+            android:title="Sair" />
+    </group>
+
+</menu>

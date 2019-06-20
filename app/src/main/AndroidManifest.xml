@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.app.sample.recipe">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity android:name=".View.LoginActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".View.RecoverPasswordActivity" />
+        <activity android:name=".View.SigninActivity" />
+        <activity android:name=".View.TermsAndPrivacityPolicy.PrivacityPolicy" />
+        <activity android:name=".View.TermsAndPrivacityPolicy.TermsOfUser" />
+        <activity android:name=".ActivityMain" />
+        <activity android:name=".ActivityCategoryDetails" />
+        <activity android:name=".ActivityRecipeDetails" android:windowSoftInputMode="adjustPan"/>
+        <activity android:name="cantinho.brasileiro.Editar_perfil" />
+        <activity android:name="cantinho.brasileiro.Publicar_receitas"></activity>
+    </application>
+
+</manifest>

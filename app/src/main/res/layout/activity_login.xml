@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?><!--
+  ~ /*
+  ~  *                                     /@
+  ~  *                      __        __   /\/
+  ~  *                     /==\      /  \_/\/
+  ~  *                   /======\    \/\__ \__
+  ~  *                 /==/\  /\==\    /\_|__ \
+  ~  *              /==/    ||    \=\ / / / /_/
+  ~  *            /=/    /\ || /\   \=\/ /
+  ~  *         /===/   /   \||/   \   \===\
+  ~  *       /===/   /_________________ \===\
+  ~  *    /====/   / |                /  \====\
+  ~  *  /====/   /   |  _________    /      \===\
+  ~  *  /==/   /     | /   /  \ / / /         /===/
+  ~  * |===| /       |/   /____/ / /         /===/
+  ~  *  \==\             /\   / / /          /===/
+  ~  *  \===\__    \    /  \ / / /   /      /===/   ____                    __  _         __  __                __
+  ~  *    \==\ \    \\ /____/   /_\ //     /===/   / __ \__  ______  ____ _/ /_(_)____   / / / /__  ____ ______/ /_
+  ~  *    \===\ \   \\\\\\\/   ///////     /===/  / / / / / / / __ \/ __ `/ __/ / ___/  / /_/ / _ \/ __ `/ ___/ __/
+  ~  *      \==\/     \\\\/ / //////       /==/  / /_/ / /_/ / / / / /_/ / /_/ / /__   / __  /  __/ /_/ / /  / /_
+  ~  *      \==\     _ \\/ / /////        |==/   \___\_\__,_/_/ /_/\__,_/\__/_/\___/  /_/ /_/\___/\__,_/_/   \__/
+  ~  *        \==\  / \ / / ///          /===/
+  ~  *        \==\ /   / / /________/    /==/
+  ~  *          \==\  /               | /==/
+  ~  *          \=\  /________________|/=/
+  ~  *            \==\     _____     /==/
+  ~  *           / \===\   \   /   /===/
+  ~  *          / / /\===\  \_/  /===/
+  ~  *         / / /   \====\ /====/
+  ~  *        / / /      \===|===/
+  ~  *        |/_/         \===/
+  ~  *                       =
+  ~  *
+  ~  * Copyright(c) Developed by John Alves at 2018/11/4 at 9:45:1 for quantic heart studios
+  ~  */
+  -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:gravity="center_horizontal"
+    android:orientation="vertical">
+
+    <ScrollView
+        android:id="@+id/ll_pai"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:ignore="UselessParent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="@dimen/default_layout_padding">
+
+            <LinearLayout
+                android:layout_width="@dimen/default_icon_size"
+                android:layout_height="@dimen/default_icon_size"
+                android:gravity="center"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:src="@drawable/ic_logo"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent" />
+
+            </LinearLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/styleTextImputLayout"
+                app:hintTextAppearance="@style/styleTextTextImputLayout">
+
+                <EditText
+                    android:id="@+id/edtLogin"
+                    style="@style/etStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_email"
+                    android:inputType="textEmailAddress" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <android.support.design.widget.TextInputLayout
+                style="@style/styleTextImputLayout"
+                app:hintTextAppearance="@style/styleTextTextImputLayout">
+
+                <EditText
+                    android:id="@+id/edtSenha"
+                    style="@style/etStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:hint="@string/hint_password"
+                    android:inputType="textPassword" />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Button
+                android:id="@+id/btnLogin"
+                style="@style/btnStyleLogin"
+                android:text="Entrar" />
+
+            <TextView
+                android:id="@+id/tv_recoverpass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="15dp"
+                android:text="@string/label_recover_password"
+                android:textColor="@color/ColorText" />
+
+            <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:id="@+id/login_menu2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/label_do_you_hace_account"
+                    android:textColor="@color/ColorText"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/tv_signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:text="@string/label_signin"
+                    android:textColor="@color/ColorText"
+                    android:textSize="15sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/tv_pricavity_policy"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginTop="30dp"
+                android:background="@android:color/transparent"
+                android:text="@string/label_politica_de_privacidade"
+                android:textColor="@color/ColorText"
+                android:textSize="11sp"
+                android:textStyle=""
+                tools:ignore="SmallSp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

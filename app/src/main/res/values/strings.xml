@@ -1,0 +1,39 @@
+<resources>
+    <string name="app_name">Cantinho BR</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+    <!--exit notification-->
+    <string name="press_again_exit_app">Press again to exit</string>
+
+    <string name="hint_email">Digite seu email</string>
+    <string name="hint_password">Digite sua senha</string>
+    <string name="label_enter">Entrar</string>
+    <string name="label_recover_password"><u><b>Esqueceu a senha</b></u></string>
+    <string name="label_do_you_hace_account">Não tem uma conta?</string>
+    <string name="label_signin"><u><b>Inscrever-se</b></u></string>
+
+    <!--activity_recover_password-->
+    <string name="label_recover_password_title">Recupere sua senha!</string>
+    <string name="label_recover_password_subtitle">Não lembra sua senha? Preencha seu campo abaixo e recupere sua senha.</string>
+    <string name="label_btn_recover_password">Recuperar</string>
+    <string name="label_toolbar_recoverPassword">Recuperar Senha</string>
+
+    <!--activity_signin-->
+    <string name="label_toolbar_signin">Cadastre-se</string>
+    <string name="hint_full_name">Nome completo</string>
+    <string name="hint_cpf">CPF</string>
+    <string name="hint_cep">CEP</string>
+    <string name="hint_number_house">N°</string>
+    <string name="hint_complementes">Complemento</string>
+    <string name="label_politica_de_privacidade">Politica de privacidade</string>
+    <string name="titulo">Titulo</string>
+    <string name="ingredientes">Ingredientes</string>
+    <string name="preparo">Preparo</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>
